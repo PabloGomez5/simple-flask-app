@@ -1,3 +1,4 @@
+import os
 import pymysql
 import yaml
 
@@ -7,15 +8,15 @@ from pymysql.err import MySQLError
 class SQLClient:
     def __init__(self):
         db_config = self.get_config()
-        self._user = db_config["tf_rds_username"]
-        self._password = db_config["tf_rds_password"]
-        self._host = db_config["tf_rds_endpoint"]
+        self._user = db_config["mysql_user"]
+        self._password = db_config["mysql_password"]
+        self._host = db_config["mysql_host"]
         self._port = 3306
-        self._database = db_config["database"]
+        self._database = db_config["mysql_database"]
 
     def get_config(self):
-        here = ""
-        config_file = f"{here}/../config/config.yml"
+        here = os.path.dirname(os.path.realpath(__file__))
+        config_file = f"{here}/config/config.yml"
 
         try:
             with open(config_file, "r") as stream:
