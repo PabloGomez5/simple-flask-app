@@ -1,10 +1,13 @@
 #!/bin/bash
 
-PID=`ps -ef |grep "/usr/bin/python3 -m flask" |grep -v grep |awk '{ print $2 }'`
+echo "Stopping" >> ./app.log
+
+PID=`ps -ef |grep gunicorn |grep -v grep |awk '{ print $2 }'|sort|head -1`
 
 if [ -z ${PID} ]
 then
-  echo "app is not running"
+  echo "App is not running" >> ./app.log
 else
+  echo "Killing ${PID}" >> ./app.log
   kill ${PID}
 fi
