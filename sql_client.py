@@ -51,3 +51,16 @@ class SQLClient:
             raise e
         finally:
             db.close()
+
+    def run_update(self, query, params):
+        db = self.get_db_connection()
+        try:
+            with db.cursor() as cursor:
+                status = cursor.execute(query, params)
+                db.commit()
+                return status
+        except MySQLError as e:
+            print("Exception [pymysql.err.{}] {}".format(e.__class__.__name__, e))
+            raise e
+        finally:
+            db.close()

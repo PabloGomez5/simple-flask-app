@@ -19,12 +19,17 @@ def output_formatter(obj):
         return str(obj)
 
 
+@app.route("/")
+@app.route("/hello")
+def do_string():
+    return "Hello"
+
+
 # Returna el mas utilizado
 @app.route("/getMasUtilizado")
 def get_mas_utilizado():
     db_data = SQLClient().run_query("SELECT jugador, SUM(minutos)  minutosTotal FROM Partidos GROUP BY  "
                                     "jugador ORDER BY minutosTotal DESC;", None)
-    print(db_data)
     data = json.dumps(db_data, default=output_formatter)
     resp = make_response(data)
 
@@ -36,17 +41,43 @@ def get_mas_utilizado():
 def get_pichichi():
     db_data = SQLClient().run_query("SELECT jugador, SUM(goles) golesTotal FROM Partidos GROUP BY "
                                     " jugador ORDER BY golesTotal DESC;", None)
-    print(db_data)
     data = json.dumps(db_data, default=output_formatter)
     resp = make_response(data)
 
     return resp
 
 
-@app.route("/")
-@app.route("/hello")
-def do_string():
-    return "Hello"
+# Returna el max asistente del equipo
+@app.route("/getAsistente")
+def get_mas_asistente():
+    db_data = SQLClient().run_query("SELECT jugador, SUM(asistencias) asistenciasTotal FROM Partidos GROUP BY "
+                                    " jugador ORDER BY asistenciasTotal DESC;", None)
+    data = json.dumps(db_data, default=output_formatter)
+    resp = make_response(data)
+
+    return resp
+
+
+# Returna el jugador con + tarjetas amarillas del equipo
+@app.route("/getMasAmarillas")
+def get_mas_amarillas():
+    db_data = SQLClient().run_query("SELECT jugador, SUM(amarillas) amarillasTotal FROM Partidos GROUP BY "
+                                    " jugador ORDER BY amarillasTotal DESC;", None)
+    data = json.dumps(db_data, default=output_formatter)
+    resp = make_response(data)
+
+    return resp
+
+
+# Returna el jugador con + tarjetas rojas del equipo
+@app.route("/getMasRojas")
+def get_mas_rojas():
+    db_data = SQLClient().run_query("SELECT jugador, SUM(roja) rojasTotal FROM Partidos GROUP BY "
+                                    " jugador ORDER BY rojasTotal DESC;", None)
+    data = json.dumps(db_data, default=output_formatter)
+    resp = make_response(data)
+
+    return resp
 
 
 # Returna la tabla convocatoria
@@ -58,9 +89,45 @@ def get_convocatoria():
     return resp
 
 
+# Returna rendimiento medio entreno
+@app.route("/getRendEntrenamientos")
+def get_rend_entrenamientos():
+    rendimiento_total = SQLClient().run_query("SELECT SUM(rendimiento) rendimientoTotal FROM Entrenamientos ORDER BY "
+                                              "rendimientoTotal DESC", None)
+
+    filas = SQLClient().run_query("SELECT count('jugador') FROM Entrenamientos", None)
+
+    result = rendimiento_total[0]['rendimientoTotal'] / filas[0]["count('jugador')"]
+
+    result_entero = round(result)
+
+    data = json.dumps(result_entero, default=output_formatter)
+    resp = make_response(data)
+
+    return resp
+
+
+# Returna rendimiento medio partido
+@app.route("/getRendPartidos")
+def get_rend_partidos():
+    rendimiento_total = SQLClient().run_query("SELECT SUM(rendimiento) rendimientoTotal FROM Partidos ORDER BY "
+                                              "rendimientoTotal DESC", None)
+
+    filas = SQLClient().run_query("SELECT count('jugador') FROM Partidos", None)
+
+    result = rendimiento_total[0]['rendimientoTotal'] / filas[0]["count('jugador')"]
+
+    result_entero = round(result)
+
+    data = json.dumps(result_entero, default=output_formatter)
+    resp = make_response(data)
+
+    return resp
+
+
 # Returna la tablas 3 ultimos entrenos....
 @app.route("/getTresUltEntrenos")
-def getTresUltEntrenos():
+def get_tres_ult_entrenos():
     # num_entrenos_list = SQLClient().run_query("SELECT numEntrenamiento from Entrenamientos WHERE dorsal=1", None)
     # num1 = len(num_entrenos_list)
     # num2 = (num1 - 1)
@@ -152,30 +219,49 @@ def get_banquillo():
     return resp
 
 
-# Returna el jugador con mas asistencias
-@app.route("/getAsistente")
-def get_asistente():
-    db_data = SQLClient().run_query("select * from Entrenadores", None)
+# REGISTRO DE UN PARTIDO
+@app.route("/registerMatch", methods=['POST'])
+def registrar_match():
+    req_data = request.get_json()
 
-    resp = make_response(jsonify(db_data))
-    return resp
+    num_partido = req_data["numeroPartido"]
+    fecha = req_data["fecha"]
+    campo = req_data["campo"]
+    rival = req_data["rival"]
+    resultado = req_data["resultado"]
+    dorsal = req_data["dorsal"]
+    jugador = req_data["jugador"]
+    posicion = req_data["posicion"]
+    convocado = req_data["convocado"]
+    titular = req_data["titular"]
+    minutos = req_data["minutos"]
+    asistencias = req_data["asistencias"]
+    goles = req_data["goles"]
+    amarillas = req_data["amarillas"]
+    roja = req_data["roja"]
+    rendimiento = req_data["rendimiento"]
+    mvp = req_data["mvp"]
+
+    query = "INSERT INTO Partidos (numPartido, fecha, rival, campo, resultado, dorsal, "
+    query += "jugador, convocado, titular, minutos, posicion, asistencias, goles, amarillas, "
+    query += "roja, rendimiento, mvp) VALUES ("
+    query += f"{num_partido}, '{fecha}', '{rival}', '{campo}', '{resultado}', {dorsal},"
+    query += f"'{jugador}', {convocado}, {titular}, {minutos}, '{posicion}', {asistencias},"
+    query += f"{goles}, {amarillas}, {roja}, {rendimiento}, {mvp})"
+
+    # REGISTRA EN LA TABLA PARTIDOS
+    SQLClient().run_update(query, None)
 
 
-# Returna Mas amarillas
-@app.route("/getMasAmarillas")
-def get_mas_Amarillas():
-    db_data = SQLClient().run_query("select * from Entrenadores", None)
+    # ACTUALIZA LA TABLA PLANTILLA ( JUGADORES )
+    query_plantilla = "UPDATE Jugadores SET numPartidos = numPartidos + 1 , rendPartidos = "
+    query_plantilla += "(((SELECT SUM(rendimiento)  rendimientoTotal FROM Partidos WHERE jugador = "
+    query_plantilla += f"'{jugador}')) / numPartidos)  WHERE jugador = "
+    query_plantilla += f"'{jugador}'"
 
-    resp = make_response(jsonify(db_data))
-    return resp
+    SQLClient().run_update(query_plantilla, None)
 
-
-# Returna Mas tarjetas rojas
-@app.route("/getMasRojas")
-def get_mas_rojas():
-    db_data = SQLClient().run_query("select * from Entrenadores", None)
-
-    resp = make_response(jsonify(db_data))
+    resp = make_response(jsonify("Registrado Exitosamente"))
     return resp
 
 
