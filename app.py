@@ -274,5 +274,38 @@ def registrar_match():
     return resp
 
 
+# REGISTRO DE UN ENTRENO
+@app.route("/registerNewPractice", methods=['POST'])
+def registrar_practise():
+    req_data = request.get_json()
+
+    num_entreno = req_data["numeroEntrenamiento"]
+    fecha = req_data["fecha"]
+    dia = req_data["dia"]
+    dorsal = req_data["dorsal"]
+    jugador = req_data["jugador"]
+    asistencia = req_data["asistencia"]
+    rendimiento = req_data["rendimiento"]
+
+    # REGISTRA EN LA TABLA ENTRENAMIENTOS
+    query = "INSERT INTO Entrenamientos (numEntrenamiento, fecha, dia, dorsal, "
+    query += "jugador, asistencia, rendimiento) VALUES ("
+    query += f"{num_entreno}, '{fecha}', '{dia}',{dorsal},"
+    query += f"'{jugador}', {asistencia}, {rendimiento})"
+    SQLClient().run_update(query, None)
+
+    # ACTUALIZA LA TABLA PLANTILLA ( JUGADORES )
+    query_plantilla = "UPDATE Jugadores SET numEntrenamientos = numEntrenamientos +"
+    query_plantilla += f"{asistencia}, rendEntrenamientos = "
+    query_plantilla += "(((SELECT SUM(rendimiento)  rendimientoTotal FROM Entrenamientos WHERE jugador = "
+    query_plantilla += f"'{jugador}')) / numEntrenamientos)  WHERE jugador = "
+    query_plantilla += f"'{jugador}'"
+    SQLClient().run_update(query_plantilla, None)
+    print(query_plantilla)
+    
+    resp = make_response(jsonify("Registrado Exitosamente"))
+    return resp
+
+
 if __name__ == '__main__':
     app.run()

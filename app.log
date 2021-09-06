@@ -21008,3 +21008,789 @@ Starting
 127.0.0.1 - - [06/Sep/2021:10:51:05 +0200] "OPTIONS /registerMatch HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
 [2021-09-06 10:51:05 +0200] [74674] [DEBUG] POST /registerMatch
 127.0.0.1 - - [06/Sep/2021:10:51:05 +0200] "POST /registerMatch HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+Stopping
+Killing 74672
+[2021-09-06 10:52:43 +0200] [74672] [INFO] Handling signal: term
+[2021-09-06 10:52:43 +0200] [74674] [INFO] Worker exiting (pid: 74674)
+Starting
+[2021-09-06 10:52:43 +0200] [74672] [INFO] Shutting down: Master
+[2021-09-06 10:52:43 +0200] [74738] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x103e300d0>
+  on_reload: <function OnReload.on_reload at 0x103e301f0>
+  when_ready: <function WhenReady.when_ready at 0x103e30310>
+  pre_fork: <function Prefork.pre_fork at 0x103e30430>
+  post_fork: <function Postfork.post_fork at 0x103e30550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103e30670>
+  worker_int: <function WorkerInt.worker_int at 0x103e30790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x103e308b0>
+  pre_exec: <function PreExec.pre_exec at 0x103e309d0>
+  pre_request: <function PreRequest.pre_request at 0x103e30af0>
+  post_request: <function PostRequest.post_request at 0x103e30b80>
+  child_exit: <function ChildExit.child_exit at 0x103e30ca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x103e30dc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x103e30ee0>
+  on_exit: <function OnExit.on_exit at 0x103e3c040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 10:52:43 +0200] [74738] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 10:52:43 +0200] [74738] [DEBUG] Arbiter booted
+[2021-09-06 10:52:43 +0200] [74738] [INFO] Listening at: http://0.0.0.0:8080 (74738)
+[2021-09-06 10:52:43 +0200] [74738] [INFO] Using worker: sync
+[2021-09-06 10:52:43 +0200] [74740] [INFO] Booting worker with pid: 74740
+[2021-09-06 10:52:43 +0200] [74738] [DEBUG] 1 workers
+[2021-09-06 11:20:56 +0200] [74738] [CRITICAL] WORKER TIMEOUT (pid:74740)
+[2021-09-06 11:20:56 +0200] [74740] [INFO] Worker exiting (pid: 74740)
+[2021-09-06 11:20:56 +0200] [74749] [INFO] Booting worker with pid: 74749
+[2021-09-06 11:27:59 +0200] [74738] [CRITICAL] WORKER TIMEOUT (pid:74749)
+[2021-09-06 11:27:59 +0200] [74749] [INFO] Worker exiting (pid: 74749)
+[2021-09-06 11:27:59 +0200] [74825] [INFO] Booting worker with pid: 74825
+[2021-09-06 12:02:47 +0200] [74738] [CRITICAL] WORKER TIMEOUT (pid:74825)
+[2021-09-06 12:02:47 +0200] [74825] [INFO] Worker exiting (pid: 74825)
+[2021-09-06 12:02:47 +0200] [74981] [INFO] Booting worker with pid: 74981
+Stopping
+Killing 74738
+[2021-09-06 12:03:25 +0200] [74738] [INFO] Handling signal: term
+[2021-09-06 12:03:25 +0200] [74981] [INFO] Worker exiting (pid: 74981)
+Starting
+[2021-09-06 12:03:25 +0200] [75023] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1015180d0>
+  on_reload: <function OnReload.on_reload at 0x1015181f0>
+  when_ready: <function WhenReady.when_ready at 0x101518310>
+  pre_fork: <function Prefork.pre_fork at 0x101518430>
+  post_fork: <function Postfork.post_fork at 0x101518550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x101518670>
+  worker_int: <function WorkerInt.worker_int at 0x101518790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1015188b0>
+  pre_exec: <function PreExec.pre_exec at 0x1015189d0>
+  pre_request: <function PreRequest.pre_request at 0x101518af0>
+  post_request: <function PostRequest.post_request at 0x101518b80>
+  child_exit: <function ChildExit.child_exit at 0x101518ca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x101518dc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x101518ee0>
+  on_exit: <function OnExit.on_exit at 0x101524040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 12:03:25 +0200] [75023] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 12:03:25 +0200] [75023] [DEBUG] Arbiter booted
+[2021-09-06 12:03:25 +0200] [75023] [INFO] Listening at: http://0.0.0.0:8080 (75023)
+[2021-09-06 12:03:25 +0200] [75023] [INFO] Using worker: sync
+[2021-09-06 12:03:25 +0200] [75025] [INFO] Booting worker with pid: 75025
+[2021-09-06 12:03:25 +0200] [74738] [INFO] Shutting down: Master
+[2021-09-06 12:03:25 +0200] [75023] [DEBUG] 1 workers
+[2021-09-06 12:06:36 +0200] [75025] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:06:36 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:06:36 +0200] [75025] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:06:36 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:06:36 +0200] [75025] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:06:36 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1633 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:06:36 +0200] [75025] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:06:36 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1405 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:02 +0200] [75025] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:02 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:02 +0200] [75025] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:02 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:02 +0200] [75025] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:02 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1633 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:02 +0200] [75025] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:02 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1405 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:11 +0200] [75025] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:11 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:11 +0200] [75025] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:11 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:11 +0200] [75025] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:11 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1633 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:11 +0200] [75025] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:11 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1405 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:21 +0200] [75025] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:21 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:21 +0200] [75025] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:21 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:21 +0200] [75025] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:21 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1633 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:21 +0200] [75025] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:21 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1405 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:46 +0200] [75025] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:46 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:46 +0200] [75025] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:46 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:46 +0200] [75025] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:07:46 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1633 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:46 +0200] [75025] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:07:46 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1405 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:54 +0200] [75025] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:07:54 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:07:54 +0200] [75025] [DEBUG] POST /registerNewPractice
+[2021-09-06 12:07:54,567] ERROR in app: Exception on /registerNewPractice [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/pablogomezperez/workspace/simple-flask-app/app.py", line 297, in registrar_practise
+    SQLClient().run_update(query, None)
+  File "/Users/pablogomezperez/workspace/simple-flask-app/sql_client.py", line 64, in run_update
+    raise e
+  File "/Users/pablogomezperez/workspace/simple-flask-app/sql_client.py", line 59, in run_update
+    status = cursor.execute(query, params)
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/cursors.py", line 163, in execute
+    result = self._query(query)
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/cursors.py", line 321, in _query
+    conn.query(q)
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/connections.py", line 724, in _read_query_result
+    result.read()
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/opt/homebrew/lib/python3.9/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', '', '',,'', , )' at line 1")
+127.0.0.1 - - [06/Sep/2021:12:07:54 +0200] "POST /registerNewPractice HTTP/1.1" 500 290 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:08:49 +0200] [75025] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:08:49 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:08:49 +0200] [75025] [DEBUG] POST /registerNewPractice
+[2021-09-06 12:08:49,455] ERROR in app: Exception on /registerNewPractice [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [06/Sep/2021:12:08:49 +0200] "POST /registerNewPractice HTTP/1.1" 500 290 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+Stopping
+Killing 75023
+[2021-09-06 12:10:35 +0200] [75023] [INFO] Handling signal: term
+[2021-09-06 12:10:35 +0200] [75025] [INFO] Worker exiting (pid: 75025)
+Starting
+[2021-09-06 12:10:35 +0200] [75083] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1012fd0d0>
+  on_reload: <function OnReload.on_reload at 0x1012fd1f0>
+  when_ready: <function WhenReady.when_ready at 0x1012fd310>
+  pre_fork: <function Prefork.pre_fork at 0x1012fd430>
+  post_fork: <function Postfork.post_fork at 0x1012fd550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1012fd670>
+  worker_int: <function WorkerInt.worker_int at 0x1012fd790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1012fd8b0>
+  pre_exec: <function PreExec.pre_exec at 0x1012fd9d0>
+  pre_request: <function PreRequest.pre_request at 0x1012fdaf0>
+  post_request: <function PostRequest.post_request at 0x1012fdb80>
+  child_exit: <function ChildExit.child_exit at 0x1012fdca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x1012fddc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1012fdee0>
+  on_exit: <function OnExit.on_exit at 0x101308040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 12:10:35 +0200] [75083] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 12:10:35 +0200] [75083] [DEBUG] Arbiter booted
+[2021-09-06 12:10:35 +0200] [75083] [INFO] Listening at: http://0.0.0.0:8080 (75083)
+[2021-09-06 12:10:35 +0200] [75083] [INFO] Using worker: sync
+[2021-09-06 12:10:35 +0200] [75085] [INFO] Booting worker with pid: 75085
+[2021-09-06 12:10:35 +0200] [75023] [INFO] Shutting down: Master
+[2021-09-06 12:10:35 +0200] [75083] [DEBUG] 1 workers
+[2021-09-06 12:10:39 +0200] [75085] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:10:39 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:10:39 +0200] [75085] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:10:39 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:11:44 +0200] [75085] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:11:44 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:11:44 +0200] [75085] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:11:44 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:12:03 +0200] [75085] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:12:03 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:12:03 +0200] [75085] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:12:03 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:17:02 +0200] [75083] [CRITICAL] WORKER TIMEOUT (pid:75085)
+[2021-09-06 12:17:02 +0200] [75085] [INFO] Worker exiting (pid: 75085)
+[2021-09-06 12:17:02 +0200] [75114] [INFO] Booting worker with pid: 75114
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getBanquillo
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getBanquillo HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getMasUtilizado HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getBanquillo
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getBanquillo HTTP/1.1" 200 141 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getPichichi
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getPichichi HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getAsistente
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getAsistente HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getMasAmarillas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getMasRojas
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getMasRojas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getRendPartidos
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getRendPartidos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getMasUtilizado HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] OPTIONS /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "OPTIONS /getRendEntrenamientos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getPichichi
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getPichichi HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getAsistente
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getAsistente HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getMasAmarillas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getMasRojas
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getMasRojas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getRendPartidos
+[2021-09-06 12:31:44,325] ERROR in app: Exception on /getRendPartidos [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/pablogomezperez/workspace/simple-flask-app/app.py", line 118, in get_rend_partidos
+    result = rendimiento_total[0]['rendimientoTotal'] / filas[0]["count('jugador')"]
+TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getRendPartidos HTTP/1.1" 500 290 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:31:44 +0200] [75114] [DEBUG] GET /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:12:31:44 +0200] "GET /getRendEntrenamientos HTTP/1.1" 200 1 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:32:01 +0200] [75114] [DEBUG] OPTIONS /getPlantillaData
+127.0.0.1 - - [06/Sep/2021:12:32:01 +0200] "OPTIONS /getPlantillaData HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:32:01 +0200] [75114] [DEBUG] GET /getPlantillaData
+127.0.0.1 - - [06/Sep/2021:12:32:01 +0200] "GET /getPlantillaData HTTP/1.1" 200 3015 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getBanquillo
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getBanquillo HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getMasUtilizado HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getPichichi
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getPichichi HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getAsistente
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getAsistente HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getMasAmarillas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getMasRojas
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getMasRojas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getRendEntrenamientos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] OPTIONS /getRendPartidos
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "OPTIONS /getRendPartidos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getBanquillo
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getBanquillo HTTP/1.1" 200 141 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getMasUtilizado HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getPichichi
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getPichichi HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getAsistente
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getAsistente HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getRendEntrenamientos HTTP/1.1" 200 1 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getMasAmarillas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getRendPartidos
+[2021-09-06 12:37:00,115] ERROR in app: Exception on /getRendPartidos [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/pablogomezperez/workspace/simple-flask-app/app.py", line 118, in get_rend_partidos
+    result = rendimiento_total[0]['rendimientoTotal'] / filas[0]["count('jugador')"]
+TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getRendPartidos HTTP/1.1" 500 290 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:00 +0200] [75114] [DEBUG] GET /getMasRojas
+127.0.0.1 - - [06/Sep/2021:12:37:00 +0200] "GET /getMasRojas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:03 +0200] [75114] [DEBUG] OPTIONS /getPlantillaData
+127.0.0.1 - - [06/Sep/2021:12:37:03 +0200] "OPTIONS /getPlantillaData HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:03 +0200] [75114] [DEBUG] GET /getPlantillaData
+127.0.0.1 - - [06/Sep/2021:12:37:03 +0200] "GET /getPlantillaData HTTP/1.1" 200 3015 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:06 +0200] [75114] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:37:06 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:06 +0200] [75114] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:37:06 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:06 +0200] [75114] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:37:06 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:06 +0200] [75114] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:37:06 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:37:06 +0200] [75114] [DEBUG] GET /getPlantillaData
+127.0.0.1 - - [06/Sep/2021:12:37:06 +0200] "GET /getPlantillaData HTTP/1.1" 200 3015 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+Stopping
+Killing 75083
+[2021-09-06 12:40:05 +0200] [75083] [INFO] Handling signal: term
+[2021-09-06 12:40:05 +0200] [75114] [INFO] Worker exiting (pid: 75114)
+Starting
+[2021-09-06 12:40:05 +0200] [75256] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1034370d0>
+  on_reload: <function OnReload.on_reload at 0x1034371f0>
+  when_ready: <function WhenReady.when_ready at 0x103437310>
+  pre_fork: <function Prefork.pre_fork at 0x103437430>
+  post_fork: <function Postfork.post_fork at 0x103437550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103437670>
+  worker_int: <function WorkerInt.worker_int at 0x103437790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1034378b0>
+  pre_exec: <function PreExec.pre_exec at 0x1034379d0>
+  pre_request: <function PreRequest.pre_request at 0x103437af0>
+  post_request: <function PostRequest.post_request at 0x103437b80>
+  child_exit: <function ChildExit.child_exit at 0x103437ca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x103437dc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x103437ee0>
+  on_exit: <function OnExit.on_exit at 0x103444040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 12:40:05 +0200] [75256] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 12:40:05 +0200] [75256] [DEBUG] Arbiter booted
+[2021-09-06 12:40:05 +0200] [75256] [INFO] Listening at: http://0.0.0.0:8080 (75256)
+[2021-09-06 12:40:05 +0200] [75256] [INFO] Using worker: sync
+[2021-09-06 12:40:05 +0200] [75258] [INFO] Booting worker with pid: 75258
+[2021-09-06 12:40:05 +0200] [75083] [INFO] Shutting down: Master
+[2021-09-06 12:40:06 +0200] [75256] [DEBUG] 1 workers
+[2021-09-06 12:40:12 +0200] [75258] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:40:12 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:40:12 +0200] [75258] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:40:12 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:40:12 +0200] [75258] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:12:40:12 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:40:12 +0200] [75258] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:12:40:12 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:40:36 +0200] [75258] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:40:36 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:40:36 +0200] [75258] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:40:36 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:48:40 +0200] [75256] [CRITICAL] WORKER TIMEOUT (pid:75258)
+[2021-09-06 12:48:40 +0200] [75258] [INFO] Worker exiting (pid: 75258)
+[2021-09-06 12:48:40 +0200] [75280] [INFO] Booting worker with pid: 75280
+[2021-09-06 12:49:04 +0200] [75280] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:49:04 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:49:04 +0200] [75280] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:49:04 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:50:21 +0200] [75280] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:50:21 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:50:21 +0200] [75280] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:50:21 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:51:35 +0200] [75280] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:51:35 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:51:35 +0200] [75280] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:51:35 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:56:16 +0200] [75256] [CRITICAL] WORKER TIMEOUT (pid:75280)
+[2021-09-06 12:56:16 +0200] [75280] [INFO] Worker exiting (pid: 75280)
+[2021-09-06 12:56:16 +0200] [75317] [INFO] Booting worker with pid: 75317
+Stopping
+Killing 75256
+[2021-09-06 12:56:55 +0200] [75256] [INFO] Handling signal: term
+[2021-09-06 12:56:55 +0200] [75317] [INFO] Worker exiting (pid: 75317)
+Starting
+[2021-09-06 12:56:55 +0200] [75348] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x103bad0d0>
+  on_reload: <function OnReload.on_reload at 0x103bad1f0>
+  when_ready: <function WhenReady.when_ready at 0x103bad310>
+  pre_fork: <function Prefork.pre_fork at 0x103bad430>
+  post_fork: <function Postfork.post_fork at 0x103bad550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103bad670>
+  worker_int: <function WorkerInt.worker_int at 0x103bad790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x103bad8b0>
+  pre_exec: <function PreExec.pre_exec at 0x103bad9d0>
+  pre_request: <function PreRequest.pre_request at 0x103badaf0>
+  post_request: <function PostRequest.post_request at 0x103badb80>
+  child_exit: <function ChildExit.child_exit at 0x103badca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x103baddc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x103badee0>
+  on_exit: <function OnExit.on_exit at 0x103bb8040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 12:56:55 +0200] [75348] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 12:56:55 +0200] [75348] [DEBUG] Arbiter booted
+[2021-09-06 12:56:55 +0200] [75348] [INFO] Listening at: http://0.0.0.0:8080 (75348)
+[2021-09-06 12:56:55 +0200] [75348] [INFO] Using worker: sync
+[2021-09-06 12:56:55 +0200] [75350] [INFO] Booting worker with pid: 75350
+[2021-09-06 12:56:55 +0200] [75256] [INFO] Shutting down: Master
+[2021-09-06 12:56:55 +0200] [75348] [DEBUG] 1 workers
+[2021-09-06 12:57:36 +0200] [75350] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:57:36 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:57:36 +0200] [75350] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:57:36 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:59:28 +0200] [75350] [DEBUG] OPTIONS /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:59:28 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 12:59:28 +0200] [75350] [DEBUG] POST /registerNewPractice
+127.0.0.1 - - [06/Sep/2021:12:59:28 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
