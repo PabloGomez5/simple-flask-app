@@ -241,25 +241,34 @@ def registrar_match():
     roja = req_data["roja"]
     rendimiento = req_data["rendimiento"]
     mvp = req_data["mvp"]
+    desconvocado = req_data["desconvocado"]
 
+    # REGISTRA EN LA TABLA PARTIDOS
     query = "INSERT INTO Partidos (numPartido, fecha, rival, campo, resultado, dorsal, "
     query += "jugador, convocado, titular, minutos, posicion, asistencias, goles, amarillas, "
     query += "roja, rendimiento, mvp) VALUES ("
     query += f"{num_partido}, '{fecha}', '{rival}', '{campo}', '{resultado}', {dorsal},"
     query += f"'{jugador}', {convocado}, {titular}, {minutos}, '{posicion}', {asistencias},"
     query += f"{goles}, {amarillas}, {roja}, {rendimiento}, {mvp})"
-
-    # REGISTRA EN LA TABLA PARTIDOS
     SQLClient().run_update(query, None)
 
-
     # ACTUALIZA LA TABLA PLANTILLA ( JUGADORES )
-    query_plantilla = "UPDATE Jugadores SET numPartidos = numPartidos + 1 , rendPartidos = "
+    query_plantilla = "UPDATE Jugadores SET numPartidos = numPartidos +"
+    query_plantilla += f"{convocado}, rendPartidos = "
     query_plantilla += "(((SELECT SUM(rendimiento)  rendimientoTotal FROM Partidos WHERE jugador = "
     query_plantilla += f"'{jugador}')) / numPartidos)  WHERE jugador = "
     query_plantilla += f"'{jugador}'"
-
     SQLClient().run_update(query_plantilla, None)
+
+    # ACTUALIZA LA TABLA CONVOCATORIAS
+    query_convocatorias = "UPDATE Convocatoria SET convocado = convocado + "
+    query_convocatorias += f"{convocado} , desconvocado = desconvocado + "
+    query_convocatorias += f"{desconvocado}, titular = titular + "
+    query_convocatorias += f"{titular}, minutos = minutos + "
+    query_convocatorias += f"{minutos}, rendimiento = ((SELECT rendPartidos FROM Jugadores WHERE jugador = "
+    query_convocatorias += f"'{jugador}')) WHERE jugador = "
+    query_convocatorias += f"'{jugador}'"
+    SQLClient().run_update(query_convocatorias, None)
 
     resp = make_response(jsonify("Registrado Exitosamente"))
     return resp
