@@ -21794,3 +21794,525 @@ Starting
 127.0.0.1 - - [06/Sep/2021:12:59:28 +0200] "OPTIONS /registerNewPractice HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
 [2021-09-06 12:59:28 +0200] [75350] [DEBUG] POST /registerNewPractice
 127.0.0.1 - - [06/Sep/2021:12:59:28 +0200] "POST /registerNewPractice HTTP/1.1" 200 26 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:01 +0200] [75350] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:13:02:01 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:01 +0200] [75350] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:13:02:01 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getBanquillo
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getBanquillo HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getMasUtilizado HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getPichichi
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getPichichi HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getAsistente
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getAsistente HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getMasAmarillas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getMasRojas
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getMasRojas HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getRendEntrenamientos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getBanquillo
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getBanquillo HTTP/1.1" 200 141 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getMasUtilizado
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getMasUtilizado HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getPichichi
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getPichichi HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getAsistente
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getAsistente HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getMasAmarillas
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getMasAmarillas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getMasRojas
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getMasRojas HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getRendEntrenamientos
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getRendEntrenamientos HTTP/1.1" 200 1 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] OPTIONS /getRendPartidos
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "OPTIONS /getRendPartidos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:02:08 +0200] [75350] [DEBUG] GET /getRendPartidos
+[2021-09-06 13:02:08,248] ERROR in app: Exception on /getRendPartidos [GET]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/pablogomezperez/workspace/simple-flask-app/app.py", line 118, in get_rend_partidos
+    result = rendimiento_total[0]['rendimientoTotal'] / filas[0]["count('jugador')"]
+TypeError: unsupported operand type(s) for /: 'NoneType' and 'int'
+127.0.0.1 - - [06/Sep/2021:13:02:08 +0200] "GET /getRendPartidos HTTP/1.1" 500 290 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:17:01 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75350)
+[2021-09-06 13:17:01 +0200] [75350] [INFO] Worker exiting (pid: 75350)
+[2021-09-06 13:17:01 +0200] [75406] [INFO] Booting worker with pid: 75406
+[2021-09-06 13:17:54 +0200] [75406] [DEBUG] OPTIONS /getPartidoData
+127.0.0.1 - - [06/Sep/2021:13:17:54 +0200] "OPTIONS /getPartidoData HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:17:54 +0200] [75406] [DEBUG] POST /getPartidoData
+127.0.0.1 - - [06/Sep/2021:13:17:54 +0200] "POST /getPartidoData HTTP/1.1" 200 3 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:17:57 +0200] [75406] [DEBUG] OPTIONS /getConvocatoria
+127.0.0.1 - - [06/Sep/2021:13:17:57 +0200] "OPTIONS /getConvocatoria HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:17:57 +0200] [75406] [DEBUG] GET /getConvocatoria
+127.0.0.1 - - [06/Sep/2021:13:17:57 +0200] "GET /getConvocatoria HTTP/1.1" 200 2387 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 13:31:07 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75406)
+[2021-09-06 13:31:07 +0200] [75406] [INFO] Worker exiting (pid: 75406)
+[2021-09-06 13:31:07 +0200] [75465] [INFO] Booting worker with pid: 75465
+[2021-09-06 13:47:09 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75465)
+[2021-09-06 13:47:09 +0200] [75465] [INFO] Worker exiting (pid: 75465)
+[2021-09-06 13:47:09 +0200] [75471] [INFO] Booting worker with pid: 75471
+[2021-09-06 14:04:38 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75471)
+[2021-09-06 14:04:38 +0200] [75471] [INFO] Worker exiting (pid: 75471)
+[2021-09-06 14:04:38 +0200] [75477] [INFO] Booting worker with pid: 75477
+[2021-09-06 14:06:21 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75477)
+[2021-09-06 14:06:21 +0200] [75477] [INFO] Worker exiting (pid: 75477)
+[2021-09-06 14:06:21 +0200] [75484] [INFO] Booting worker with pid: 75484
+[2021-09-06 14:21:31 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75484)
+[2021-09-06 14:21:31 +0200] [75484] [INFO] Worker exiting (pid: 75484)
+[2021-09-06 14:21:31 +0200] [75492] [INFO] Booting worker with pid: 75492
+[2021-09-06 14:33:31 +0200] [75348] [CRITICAL] WORKER TIMEOUT (pid:75492)
+[2021-09-06 14:33:31 +0200] [75492] [INFO] Worker exiting (pid: 75492)
+[2021-09-06 14:33:31 +0200] [75497] [INFO] Booting worker with pid: 75497
+Stopping
+Killing 75348
+[2021-09-06 14:37:45 +0200] [75348] [INFO] Handling signal: term
+[2021-09-06 14:37:45 +0200] [75497] [INFO] Worker exiting (pid: 75497)
+Starting
+[2021-09-06 14:37:45 +0200] [75565] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x101b0d0d0>
+  on_reload: <function OnReload.on_reload at 0x101b0d1f0>
+  when_ready: <function WhenReady.when_ready at 0x101b0d310>
+  pre_fork: <function Prefork.pre_fork at 0x101b0d430>
+  post_fork: <function Postfork.post_fork at 0x101b0d550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x101b0d670>
+  worker_int: <function WorkerInt.worker_int at 0x101b0d790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x101b0d8b0>
+  pre_exec: <function PreExec.pre_exec at 0x101b0d9d0>
+  pre_request: <function PreRequest.pre_request at 0x101b0daf0>
+  post_request: <function PostRequest.post_request at 0x101b0db80>
+  child_exit: <function ChildExit.child_exit at 0x101b0dca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x101b0ddc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x101b0dee0>
+  on_exit: <function OnExit.on_exit at 0x101b18040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 14:37:45 +0200] [75565] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 14:37:45 +0200] [75565] [DEBUG] Arbiter booted
+[2021-09-06 14:37:45 +0200] [75565] [INFO] Listening at: http://0.0.0.0:8080 (75565)
+[2021-09-06 14:37:45 +0200] [75565] [INFO] Using worker: sync
+[2021-09-06 14:37:45 +0200] [75567] [INFO] Booting worker with pid: 75567
+[2021-09-06 14:37:45 +0200] [75348] [INFO] Shutting down: Master
+[2021-09-06 14:37:45 +0200] [75565] [DEBUG] 1 workers
+[2021-09-06 14:37:49 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:37:49 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:49 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:37:49 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:51 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:37:51 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:51 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:37:51 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:51 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:37:51 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:51 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:37:51 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:37:51 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:37:51 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:38:47 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:38:47 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:39:15 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:39:15 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:42:25 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:42:25 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:06 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:43:06 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:11 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:43:11 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:11 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:43:11 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:11 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:43:11 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:43:58 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:43:58 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:10 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:45:10 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:45:35 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:45:35 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:51:33 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:51:33 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:52:36 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:52:36 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:02 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:53:02 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:53:34 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:53:34 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:18 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:54:18 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:54:32 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:54:32 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:56:21 +0200] [75567] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:56:21 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 1902 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+Stopping
+Killing 75565
+[2021-09-06 14:56:52 +0200] [75565] [INFO] Handling signal: term
+[2021-09-06 14:56:52 +0200] [75567] [INFO] Worker exiting (pid: 75567)
+Starting
+[2021-09-06 14:56:52 +0200] [75565] [INFO] Shutting down: Master
+[2021-09-06 14:56:52 +0200] [75704] [DEBUG] Current configuration:
+  config: gunicorn.conf.py
+  wsgi_app: None
+  bind: ['0.0.0.0:8080']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/pablogomezperez/workspace/simple-flask-app
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./app.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./app.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: wsgi:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1035bb0d0>
+  on_reload: <function OnReload.on_reload at 0x1035bb1f0>
+  when_ready: <function WhenReady.when_ready at 0x1035bb310>
+  pre_fork: <function Prefork.pre_fork at 0x1035bb430>
+  post_fork: <function Postfork.post_fork at 0x1035bb550>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1035bb670>
+  worker_int: <function WorkerInt.worker_int at 0x1035bb790>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1035bb8b0>
+  pre_exec: <function PreExec.pre_exec at 0x1035bb9d0>
+  pre_request: <function PreRequest.pre_request at 0x1035bbaf0>
+  post_request: <function PostRequest.post_request at 0x1035bbb80>
+  child_exit: <function ChildExit.child_exit at 0x1035bbca0>
+  worker_exit: <function WorkerExit.worker_exit at 0x1035bbdc0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1035bbee0>
+  on_exit: <function OnExit.on_exit at 0x1035c8040>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-09-06 14:56:52 +0200] [75704] [INFO] Starting gunicorn 20.1.0
+[2021-09-06 14:56:52 +0200] [75704] [DEBUG] Arbiter booted
+[2021-09-06 14:56:52 +0200] [75704] [INFO] Listening at: http://0.0.0.0:8080 (75704)
+[2021-09-06 14:56:52 +0200] [75704] [INFO] Using worker: sync
+[2021-09-06 14:56:52 +0200] [75706] [INFO] Booting worker with pid: 75706
+[2021-09-06 14:56:52 +0200] [75704] [DEBUG] 1 workers
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:29 +0200] [75706] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:57:29 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 1902 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:32 +0200] [75706] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:57:32 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:32 +0200] [75706] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:57:32 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:32 +0200] [75706] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:57:32 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 1902 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:57:42 +0200] [75706] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:57:42 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3510 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:02 +0200] [75706] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:58:02 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] OPTIONS /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "OPTIONS /getJugadoresPlantilla HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] OPTIONS /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "OPTIONS /getCalendarioRivals HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] GET /getJugadoresPlantilla
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "GET /getJugadoresPlantilla HTTP/1.1" 200 1635 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] GET /getCalendarioRivals
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "GET /getCalendarioRivals HTTP/1.1" 200 1478 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] OPTIONS /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "OPTIONS /getTresUltEntrenos HTTP/1.1" 200 0 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"
+[2021-09-06 14:58:19 +0200] [75706] [DEBUG] GET /getTresUltEntrenos
+127.0.0.1 - - [06/Sep/2021:14:58:19 +0200] "GET /getTresUltEntrenos HTTP/1.1" 200 3364 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0"

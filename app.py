@@ -128,13 +128,15 @@ def get_rend_partidos():
 # Returna la tablas 3 ultimos entrenos....
 @app.route("/getTresUltEntrenos")
 def get_tres_ult_entrenos():
-    # num_entrenos_list = SQLClient().run_query("SELECT numEntrenamiento from Entrenamientos WHERE dorsal=1", None)
-    # num1 = len(num_entrenos_list)
-    # num2 = (num1 - 1)
-    # num3 = (num1 - 2)
-    query = "select numEntrenamiento,jugador,asistencia,rendimiento from Entrenamientos where numEntrenamiento = 2 " \
-            "OR numEntrenamiento = 1 OR numEntrenamiento = 0 "
-    # TODO PREGUNTAR A WARREN
+    num_entrenos_list = SQLClient().run_query("SELECT numEntrenamiento from Entrenamientos WHERE dorsal=1", None)
+    num1 = len(num_entrenos_list)
+    num2 = (num1 - 1)
+    num3 = (num1 - 2)
+    query = "select numEntrenamiento,jugador,asistencia,rendimiento from Entrenamientos where numEntrenamiento = "
+    query += f"{num1} OR numEntrenamiento = "
+    query += f"{num2} OR numEntrenamiento = "
+    query += f"{num3}"
+
     db_data = SQLClient().run_query(query, None)
 
     resp = make_response(jsonify(db_data))
@@ -302,7 +304,7 @@ def registrar_practise():
     query_plantilla += f"'{jugador}'"
     SQLClient().run_update(query_plantilla, None)
     print(query_plantilla)
-    
+
     resp = make_response(jsonify("Registrado Exitosamente"))
     return resp
 
